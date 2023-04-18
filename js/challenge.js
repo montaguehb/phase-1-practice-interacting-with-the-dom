@@ -58,4 +58,5 @@ document.querySelector("#comment-form").addEventListener("submit", (event) => {
     let newP = document.createElement("p");
     newP.textContent = document.querySelector("#comment-input").value; 
     document.querySelector("#list").appendChild(newP);
+    document.querySelector("#comment-form").reset();
 });
